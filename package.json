@@ -1,0 +1,19 @@
+{
+  "name": "cicocinas",
+  "author": "Felipe Gonzalez <felipe3dfx@gmail.com>",
+  "main": "gulpfile.js",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "dependencies": {
+    "browser-sync": "^2.14.0",
+    "graceful-fs": "^4.1.5",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "pug": ">=2.0.0-alpha <3",
+    "gulp-pug": "^3.0.4"
+  }
+}

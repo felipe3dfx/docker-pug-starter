@@ -1,0 +1,29 @@
+version: '2'
+services:
+  web:
+    build: .
+    image: cicocinas
+    command: http-server -p 8000
+    ports:
+      - "3000:3000"
+      - "8000:8000"
+    volumes:
+      - .:/code
+    depends_on:
+      - bower
+      - sass
+  npm:
+    image: cicocinas
+    command: npm install
+    volumes:
+      - .:/code
+  bower:
+    image: cicocinas
+    command: bower install --allow-root
+    volumes:
+      - .:/code
+  sass:
+    image: cicocinas
+    command: gulp compile-sass
+    volumes:
+      - .:/code
