@@ -18,7 +18,8 @@ gulp.task('compile-pug', function() {
         .pipe(pug({
             pretty: true
         }))
-        .pipe(gulp.dest('public'));
+        .pipe(gulp.dest('public'))
+        .pipe(browserSync.stream());
 });
 
 
@@ -30,7 +31,7 @@ gulp.task('watch', function() {
 
     gulp.watch('static/sass/*.sass', ['compile-sass']);
     gulp.watch('static/js/**/*', browserSync.reload);
-    gulp.watch('static/pug/**/*.pug', browserSync.reload);
+    gulp.watch('static/pug/**/*.pug', ['compile-pug']);
 });
 
-gulp.task('default', ['compile-sass', 'watch', 'compile-pug']);
+gulp.task('default', ['compile-sass', 'compile-pug']);
