@@ -1,7 +1,7 @@
 {
-  "name": "cicocinas",
+  "name": "your_project_name",
   "authors": [
-    "AxiaCore <felipe3dfx@gmail.com>"
+    "Demo <demo@example.com>"
   ],
   "private": true,
   "ignore": [

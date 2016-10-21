@@ -1,11 +1,11 @@
 {
-  "name": "cicocinas",
-  "author": "Felipe Gonzalez <felipe3dfx@gmail.com>",
+  "name": "your_project_name",
+  "author": "<demo@example.com>",
   "main": "gulpfile.js",
   "private": true,
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git@github.com:felipe3dfx/docker-pug-starter.git"
   },
   "dependencies": {
     "browser-sync": "^2.14.0",

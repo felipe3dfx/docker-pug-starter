@@ -2,7 +2,7 @@ version: '2'
 services:
   web:
     build: .
-    image: cicocinas
+    image: web
     command: http-server -p 8000
     ports:
       - "3000:3000"
@@ -13,17 +13,17 @@ services:
       - bower
       - sass
   npm:
-    image: cicocinas
+    image: web
     command: npm install
     volumes:
       - .:/code
   bower:
-    image: cicocinas
+    image: web
     command: bower install --allow-root
     volumes:
       - .:/code
   sass:
-    image: cicocinas
+    image: web
     command: gulp compile-sass
     volumes:
       - .:/code
