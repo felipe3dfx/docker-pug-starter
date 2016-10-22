@@ -10,6 +10,6 @@ Thumbs.db
 
 # Folders
 .sass-cache
-/static/css/*.css
-/static/bower_components
+/public
+/src/bower_components
 /node_modules

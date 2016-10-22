@@ -12,4 +12,4 @@ RUN make && ln -s /usr/local/lib/sassc-3.3.6/bin/sassc /usr/local/bin/sassc
 
 RUN mkdir /code
 WORKDIR /code
-RUN npm install -g gulp bower pug pug-cli http-server
+RUN npm install -g gulp bower http-server
