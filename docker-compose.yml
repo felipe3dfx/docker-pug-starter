@@ -11,7 +11,7 @@ services:
       - .:/code
     depends_on:
       - bower
-      - sass
+      - gulp
   npm:
     image: web
     command: npm install
@@ -22,8 +22,8 @@ services:
     command: bower install --allow-root
     volumes:
       - .:/code
-  sass:
+  gulp:
     image: web
-    command: gulp compile-sass
+    command: gulp
     volumes:
       - .:/code
